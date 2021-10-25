@@ -6,6 +6,10 @@ app = Flask(__name__)
 def hello_world():
     return "<p>Hello, World!</p>"
 
+@app.route("/goodbye")
+def goodbye_world():
+    return "<p>Goodbye, World!</p>"
+
 @app.route("/ryan")
 def ryans_endpoint():
     return "<p>Hello, Ryan!</p>"
